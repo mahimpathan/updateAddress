@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNgSeleniumSuite" parallel="false">
+    <parameter name="email" value="mnadeem@live.de"/>
+    <parameter name="password" value="Student_1"/>
+    <parameter name="street1" value="Tamara-Danz-Straße"/>
+    <parameter name="street2" value="Lichtenberg"/>
+    <parameter name="postalCode" value="10243"/>
+    <parameter name="newStreet1" value="Köpenicker Str. 20"/>
+    <parameter name="newPostalCode" value="10993"/>
+    <parameter name="newCity" value="Berlin"/>
+
+    <test name="UpdateAddress">
+        <classes>
+            <class name="de.zalando.updateAddress.UpdateAddressSteps" />
+        </classes>
+    </test>
+</suite>
